@@ -1,0 +1,114 @@
+/* css/styles.css */
+:root {
+    --primary-color: #4CAF50; /* Green color to match power theme */
+    --secondary-color: #2E7D32; /* Darker green */
+    --accent-color: #F9A825; /* Golden yellow accent */
+    --text-color: #333333;
+    --background-color: #F5F5F5;
+    --nav-hover-color: #8BC34A; /* Lighter green for hover effects */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#power-logo {
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#power-logo:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-color);
+    color: white;
+}
+
+nav a.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+h1, h2 {
+    color: var(--secondary-color);
+}
+
+h1 {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.data-placeholder {
+    background-color: #e0e0e0;
+    border: 1px dashed var(--primary-color);
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+#ai-acknowledgement {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}

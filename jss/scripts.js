@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Add click events to navigation links
+    // Add click events to navigation linkss
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();

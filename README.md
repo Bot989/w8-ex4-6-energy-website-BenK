@@ -10,12 +10,19 @@ GenAI Acknowledgement: The base Template for this project was done so with the u
 ALTERNATIVELY if the above fails
 1. Paste the following into the VSC Console:
 git init
+
 git add .
+
 git commit -m "Initial commit"
+
 git remote remove origin
+
 git remote add origin https://github.com/COS30045-2025-Classroom/w0-ex0-2-energy-website-Bot989
+
 git branch -M main 
+
 git push -u origin main
+
 git push -f origin main 
 
 

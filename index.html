@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy Consumption - Home</title>
     <link rel="stylesheet" href="css/styles.css"><!--Import of css file-->
+    <!-- Add D3 library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
+    
+
     <header>
         <!--Clicable logo with return reference to Home page-->
         <div id="logo"> 
             <a href="index.html">
-                <img src="images/PowerIcon.png" alt="Power Icon" id="power-logo">
+                <img src="images/barchart.png" alt="Power Icon" id="power-logo">
             </a>
         </div>
         <nav>
@@ -25,6 +29,8 @@
 
     <main id="content">
         <section id="home-content">
+            <img src="images/Screenshot 2025-03-18 at 11.15.41 am.png" alt="Photo">
+
             <h1>Appliance Energy Consumption in Australia</h1>
             <p>Welcome to our energy consumption information portal. Here you'll find data visualizations and information about energy usage patterns for various household appliances in the Australian market.</p>
             
@@ -33,6 +39,15 @@
             
             <h2>Explore Our Visualizations</h2>
             <p>Navigate to specific appliance categories to see detailed energy consumption data visualizations and comparisons between different models available in Australia.</p>
+            
+            <!-- Adding the bar chart section -->
+            <div id="chart-message"></div>
+            
+            <h2>Energy Consumption Bar Chart</h2>
+            <div id="chart-container">
+                <!-- SVG element where the bar chart will be drawn -->
+                <svg id="bar-chart" width="800" height="400"></svg>
+            </div>
         </section>
     </main>
 
@@ -41,6 +56,9 @@
         <p id="ai-acknowledgement">GenAI acknowledgement: Some code and content was generated with the assistance of Claude AI.</p>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="barchart-js.js"></script>
 </body>
 </html>

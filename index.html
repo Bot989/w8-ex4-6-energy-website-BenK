@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy Consumption - Home</title>
-    <link rel="stylesheet" href="css/styles.css"><!--Import of css file-->
-    <!-- Add D3 library -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Add D3 library - only load it once -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    
-    
-
+    <style>
+        /* Additional styles for the chart container */
+        #chart-container {
+            margin: 20px 0;
+            max-width: 100%;
+            overflow-x: auto;
+        }
+        #chart-message {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        /* Make the chart responsive */
+        #bar-chart {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    
-
     <header>
-        <!--Clicable logo with return reference to Home page-->
+        <!--Clickable logo with return reference to Home page-->
         <div id="logo"> 
             <a href="index.html">
                 <img src="images/PowerIcon.png" alt="Power Icon" id="power-logo">
@@ -32,31 +44,22 @@
 
     <main id="content">
         <section id="home-content">
-            
-
             <h1>Appliance Energy Consumption in Australia</h1>
             <p>Welcome to our energy consumption information portal. Here you'll find data visualizations and information about energy usage patterns for various household appliances in the Australian market.</p>
             
-            <div class="responsive-svg-container">
-                
-
-            </div>
-            
-
-
             <h2>Why Energy Efficiency Matters</h2>
             <p>Energy-efficient appliances help reduce electricity bills and lower greenhouse gas emissions. Understanding the energy consumption of your appliances can help you make informed purchasing decisions and reduce your carbon footprint.</p>
             
             <h2>Explore Our Visualizations</h2>
             <p>Navigate to specific appliance categories to see detailed energy consumption data visualizations and comparisons between different models available in Australia.</p>
             
-            <!-- Adding the bar chart section -->
+            <!-- Status message for chart loading -->
             <div id="chart-message"></div>
             
-            <h2>Energy Consumption Bar Chart</h2>
+            <h2>Television Screen Size Comparison</h2>
             <div id="chart-container">
                 <!-- SVG element where the bar chart will be drawn -->
-                <svg id="bar-chart" width="800" height="400"></svg>
+                <svg id="bar-chart" width="800" height="700"></svg>
             </div>
         </section>
     </main>
@@ -66,9 +69,8 @@
         <p id="ai-acknowledgement">GenAI acknowledgement: Some code and content was generated with the assistance of Claude AI.</p>
     </footer>
 
-    
-
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Correct path to your JS file -->
     <script src="jss/barchart-js.js"></script>
+    <script src="jss/linechart-js.js"></script>
 </body>
 </html>

@@ -17,6 +17,13 @@ body {
     line-height: 1.6;
 }
 
+.responsive-svg-container { /* For SVGs */
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
 header {
     background-color: white;
     display: flex;

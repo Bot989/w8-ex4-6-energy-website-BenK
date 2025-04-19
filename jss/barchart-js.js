@@ -6,7 +6,7 @@ d3.select("h1")
 const svg = d3.select("#bar-chart")
   .attr("width", 800)
   .attr("height", 700) // Increased height for better spacing
-  .attr("viewBox", "0 0 800 700") // Updated viewBox to match
+  .attr("viewBox", "0 0 800 700") 
   .style("border", "1px solid black");
 
 // Try to load the real data

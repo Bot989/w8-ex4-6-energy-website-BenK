@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy Consumption - Home</title>
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Add D3 library - only load it once -->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    
     <style>
         /* Additional styles for the chart container */
         #chart-container {
@@ -58,9 +58,27 @@
             
             <h2>Television Screen Size Comparison</h2>
             <div id="chart-container">
-                <!-- SVG element where the bar chart will be drawn -->
+                <!--SVG element for the bar chart-->
                 <svg id="bar-chart" width="800" height="700"></svg>
             </div>
+
+            <h2>TV Screen Size vs. Energy Consumption</h2>
+             <div id="line-chart-container">
+                 <svg id="line-chart" width="800" height="500"></svg>
+            </div>
+
+            <h2>TV Screen Size vs. Energy Consumption</h2>
+            <div id="pie-chart-container">
+                <svg id="pie-chart" width="800" height="500"></svg>
+           </div>
+
+           <!-- Add this section before your chart container -->
+        <section id="chart-controls">
+                <div id="filter-controls" class="control-section">
+                <!-- Filter controls will be dynamically added here by the JS -->
+                </div>
+        </section>
+
         </section>
     </main>
 
@@ -69,8 +87,12 @@
         <p id="ai-acknowledgement">GenAI acknowledgement: Some code and content was generated with the assistance of Claude AI.</p>
     </footer>
 
-    <!-- Correct path to your JS file -->
+    <!-- Add D3 library-->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Paths to js files -->
+    <script src="jss/interactivity.js"></script>
     <script src="jss/barchart-js.js"></script>
     <script src="jss/linechart-js.js"></script>
+    <script src="jss/piechart-js.js"></script>
 </body>
 </html>
